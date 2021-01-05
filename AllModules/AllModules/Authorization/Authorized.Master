@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Authorized.master.cs" 
+Inherits="Authorization.Authorized" MasterPageFile="~/Site.Master" EnableTheming="true"  %>
+
+ <asp:Content  ContentPlaceHolderID="headMaster" runat="server">
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>
+ 
+ <asp:Content ContentPlaceHolderID="MenuBar" runat="server"> 
+ <li style="width:10%;"><a href="#">&nbsp;</a></li>  
+ </asp:Content>
+ 
+ <asp:Content ContentPlaceHolderID="mainMaster" runat="server">
+ <asp:ContentPlaceHolder ID="main" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>

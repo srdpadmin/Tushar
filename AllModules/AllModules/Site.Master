@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AllModules.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript" >
+        // Javascript originally by Patrick Griffiths and Dan Webb.
+        // http://htmldog.com/articles/suckerfish/dropdowns/
+        sfHover = function() {
+            var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+            for (var i = 0; i < sfEls.length; i++) {
+                sfEls[i].onmouseover = function() {
+                    this.className += " hover";
+                }
+                sfEls[i].onmouseout = function() {
+                    this.className = this.className.replace(new RegExp(" hover\\b"), "");
+                }
+            }
+        }
+        if (window.attachEvent) window.attachEvent("onload", sfHover);
+    </script>
+    <asp:ContentPlaceHolder ID="headMaster" runat="server"></asp:ContentPlaceHolder>
+    <link  href="App_Themes/Default/metro.css" rel="stylesheet" type="text/css" />
+    <link  href="App_Themes/Default/menu3.css" rel="stylesheet" type="text/css" />
+    <link  href="App_Themes/Default/breadcrumbs.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="fColor">
+    <form id="form1" runat="server">    
+     
+    <ajax:ToolkitScriptManager ID="sm" runat="server"></ajax:ToolkitScriptManager>
+   <%-- <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
+             <%--https://www.myfonts.com/topwebfonts/
+             src="http://www.srdpltd.in/Allmodules/Images/temp.png"--%>
+     <div id="headerBand1"  >
+     <div style="margin-top:-7px;"> 
+      
+     <asp:Image AlternateText="Sustainable Research & Development Pvt. Ltd." ID="headImage" runat="server" Height="28px"/>
+        
+    
+     </div>
+    
+     </div>
+     <div >
+     <asp:Panel ID="AuthBar" runat="server">
+        <div style="color: #FFFFFF; font-family:'segoe ui'; font-size:14px;">
+        <ul id="navbar">       
+         <li style="width:10%;">
+        <asp:HyperLink ID="lnkAuthHome" runat="server" NavigateUrl="~/Default.aspx" Text="Home"></asp:HyperLink>  
+         </li>        
+         <asp:ContentPlaceHolder ID="MenuBar" runat="server">
+         <li style="width:10%;"><a href="#">Navigation</a>
+            <ul>        
+               <li style="width: 17em;">
+               <asp:HyperLink ID="lnkPay" runat="server" NavigateUrl="~/Payroll/Forms/SearchEmployees.aspx">I&nbsp;-&nbsp;Pay (Manage Salary)</asp:HyperLink>                              
+               </li>   
+                <li style="width: 17em;">
+               <asp:HyperLink ID="lnkEnquiry" runat="server" NavigateUrl="~/Enquiry/Forms/Enquiries.aspx">I&nbsp;-&nbsp;Enquire (Manage Enquiry)</asp:HyperLink>                              
+               </li>   
+               <li style="width: 17em;">
+               <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Quotation/Forms/SearchQuotes.aspx">I&nbsp;-&nbsp;Quote (Manage Quotation)</asp:HyperLink>               
+               </li>                
+                <li style="width: 17em;">
+               <asp:HyperLink ID="lnkOrder" runat="server" NavigateUrl="~/PurchaseOrder/Forms/SearchOrders.aspx">I&nbsp;-&nbsp;Order (Manage Orders)</asp:HyperLink>               
+               </li>                 
+               <li style="width: 17em;">
+               <asp:HyperLink ID="lnkInventory" runat="server" NavigateUrl="~/Inventory/Forms/StockLedger.aspx">I&nbsp;-&nbsp;Control (Manage Inventory)</asp:HyperLink>                              
+               </li>
+               <%--<li style="width: 17em;">
+               <asp:HyperLink ID="lnkInvoice" runat="server" NavigateUrl="~/Invoice/Forms/SearchInvoice.aspx">I&nbsp;-&nbsp;Invoice (Manage Invoices )</asp:HyperLink>                              
+               </li>--%>  
+                <li style="width: 17em;">
+               <asp:HyperLink ID="lnkBill" runat="server" NavigateUrl="~/Billing/Forms/SearchBilling.aspx">I&nbsp;-&nbsp;Bill (Manage Bills )</asp:HyperLink>                              
+               </li>   
+            </ul>         
+         </li>
+         </asp:ContentPlaceHolder>
+         <li style="width:10%;" id="Admin"><a href="#"> Administration</a>
+            <ul>
+                <li><asp:LinkButton ID="userModule" runat="server" Text="User Module" onclick="LinkButton1_Click" ></asp:LinkButton>                                       
+                </li> 
+               <li>
+                <asp:LinkButton ID="adminPage1" runat="server" Text="Create User" onclick="CreateUser_Click"  ></asp:LinkButton>                 
+                </li>                         
+                <%-- <li>
+                <asp:LinkButton ID="adminPage2" runat="server" Text="Manage Users" onclick="ManageUsers_Click"  ></asp:LinkButton>                 
+                </li> 
+                 <li>
+                <asp:LinkButton ID="LinkButton3" runat="server" Text="Manage User Roles" onclick="ManageUserRoles_Click"  ></asp:LinkButton>                 
+                </li> --%>
+            </ul>         
+         </li> 
+         <li style="width:5%;" id="spacer">   <a href="#" >&nbsp;</a></li>       
+         <li style="width:15%;">
+        <asp:LinkButton ID="lnkChangePassword" runat="server" Text="Change Password" onclick="lnkChangePassword_Click" ></asp:LinkButton>  
+         </li>      
+         <li style="width:10%;"><a href="#">About</a>
+            <ul>
+              <%-- <li>
+               <asp:LinkButton ID="MainMenu" runat="server" CommandName="Receipt" 
+               OnClick="MainMenu_Click" >Main menu</asp:LinkButton>
+               </li> --%>         
+               <li>
+               <a href="http://www.srdpltd.in">Website</a>
+              
+               </li>                 
+            </ul>         
+         </li>
+         <li style="width:25%;">   <a href="#" >&nbsp;</a></li>                           
+          <li style="width:15%;">
+             <asp:LoginView ID="loginView1" runat="server"    >            
+                           <LoggedInTemplate>
+                           <a href="#" >Welcome <asp:LoginName ID="LoginName1" runat="server"  /></a>               
+                           </LoggedInTemplate>                                        
+             </asp:LoginView> 
+             <ul>
+             <li>
+            <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect"  LogoutPageUrl="~/Authorization/Logout.aspx"  />
+            </li>
+            </ul>
+           </li>  
+         </ul>
+         </div>
+    </asp:Panel>
+      <%--<HC:Header ID="HC"  runat="server" />--%>
+      
+     </div>
+     <div id="headerBandMargin"></div>   
+     <div id="contentHeight"> 
+     <asp:ContentPlaceHolder ID="mainMaster" runat="server" >
+     </asp:ContentPlaceHolder>
+     </div>    
+     <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+   
+                   
+    </form>
+</body>
+</html>

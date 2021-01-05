@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Payroll.Master.cs" Inherits="AllModules.Payroll.Site" 
+MasterPageFile="~/Site.Master" %>
+  
+ <asp:Content  ContentPlaceHolderID="headMaster" runat="server">
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>
+ 
+ <asp:Content ContentPlaceHolderID="MenuBar" runat="server">
+ <li style="width:10%;"><a href="#"> Salary</a>
+            <ul>
+                <li><asp:LinkButton ID="lnkSearchEmployees" runat="server" Text="Employee Search" onclick="lnkSearchEmployees_Click" ></asp:LinkButton>               
+                </li> 
+               <li>
+                <asp:LinkButton ID="lnkSalaryInformation" runat="server" Text="Manage Salaries" onclick="lnkSalaryInformation_Click" ></asp:LinkButton>                 
+                </li>                         
+                <li>
+                <asp:LinkButton ID="lnkReports" runat="server" Text="Reports" onclick="lnkReports_Click" ></asp:LinkButton>                 
+                </li> 
+                <li>
+                <asp:LinkButton ID="lnkConfig" runat="server" Text="Configuration" onclick="lnkConfig_Click" ></asp:LinkButton>                 
+                </li> 
+            </ul>         
+         </li>
+ </asp:Content>
+ 
+ <asp:Content ContentPlaceHolderID="mainMaster" runat="server">
+ <asp:ContentPlaceHolder ID="main" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>

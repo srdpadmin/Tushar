@@ -1,0 +1,51 @@
+﻿.MyCalendar .ajax__calendar_container {
+    
+    border:1px solid #646464  !Important;
+    background-color: White !Important;
+    color: red !Important;
+    margin:0px !Important;
+   
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black !Important;
+    margin:0px !Important;
+      
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: black !Important;
+    margin:0px !Important;
+    
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: black !Important;
+    margin:0px !Important;
+    font-family:Arial !Important;
+    font-size:smaller !Importtant;
+    font-weight:lighter !Important;
+     
+   
+}
+.MyCalendar  .ajax__calendar_body 
+{
+    color: black !Important;
+    margin:0px !Important;
+    font-family:Arial !Important;
+    font-size:smaller !Importtant;
+    font-weight:lighter !Important;
+  
+    
+}
+.MyCalendar td
+{
+    text-align: left; 
+    padding: 0px; 
+    height: 22px !Important; 
+    font-family:Verdana, Geneva, sans-serif; 
+    font-size:12px; 
+    color:#333;
+}

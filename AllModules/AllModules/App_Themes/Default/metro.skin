@@ -1,0 +1,61 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:TextBox runat="server" SkinID="metro" CssClass="fColor" />
+<asp:GridView runat="server" SkinId="metro"     CssClass="fColor" Width="100%"
+                             BorderStyle="None" AllowPaging="true" AllowSorting="true"  
+                             PageSize="15" AutoGenerateColumns="false"  >                            
+                            <HeaderStyle CssClass="fColor Grid_Row"  />
+                            <RowStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <PagerStyle CssClass="Grid_Row_Foot"    />
+                            <PagerSettings Mode="NumericFirstLast" />
+                            <FooterStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <AlternatingRowStyle CssClass="fColor Grid_Row"/> 
+</asp:GridView>                            
+<asp:GridView runat="server" SkinId="metroPageSizeControl"     CssClass="fColor" Width="100%"
+                             BorderStyle="None" AllowPaging="true" AllowSorting="true"  
+                             PageSize="12" AutoGenerateColumns="false"  >                            
+                            <HeaderStyle CssClass="fColor Grid_Row"  />
+                            <RowStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <PagerStyle CssClass="Grid_Row_Foot"    />
+                            <PagerSettings Mode="NumericFirstLast" />
+                            <FooterStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <AlternatingRowStyle CssClass="fColor Grid_Row"/> 
+</asp:GridView>                            
+ 
+<asp:GridView runat="server" SkinId="metroNoPaging"     CssClass="fColor" Width="100%"
+                             BorderStyle="None" AllowPaging="false" AllowSorting="true"  
+                             PageSize="15" AutoGenerateColumns="false"  >                            
+                            <HeaderStyle CssClass="fColor Grid_Row"  />
+                            <RowStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <PagerStyle CssClass="Grid_Row_Foot"    />
+                            <PagerSettings Mode="NumericFirstLast" />
+                            <FooterStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <AlternatingRowStyle CssClass="fColor Grid_Row"/> 
+</asp:GridView>
+<asp:TextBox runat="server" SkinID="halfWidth" CssClass="txtBoxHalf" />                            
+<asp:GridView runat="server" SkinId="halfmetro"     CssClass="fColor" Width="50%" 
+                             BorderStyle="None" AllowPaging="true" AllowSorting="true"  
+                             PageSize="15" AutoGenerateColumns="false"  >                            
+                            <HeaderStyle CssClass="fColor Grid_Row"  />
+                            <RowStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            <PagerStyle CssClass="Grid_Row"    />
+                            <PagerSettings Mode="NumericFirstLast"  />
+                            <FooterStyle CssClass="fColor Grid_Row" HorizontalAlign="Center"  />
+                            
+</asp:GridView>
+<asp:Button runat="server"  CssClass="button" />    
+<asp:Button runat="server"  CssClass="HiddenClass" skinId="hdnButton" />

@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="Enquiry.Master.cs" Inherits="AllModules.Enquiry.Master" 
+MasterPageFile="~/Site.Master" %>
+
+ <asp:Content ID="Content1"  ContentPlaceHolderID="headMaster" runat="server">
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>
+ 
+ <asp:Content ID="Content2" ContentPlaceHolderID="MenuBar" runat="server">
+ <li style="width:10%;"><a href="#"> Enquiry </a>
+            <ul>
+                <%--<li><asp:LinkButton ID="lnkDashboard" runat="server" Text="Enquiry Dashboard" OnClick="lnkDashboard_Click" ></asp:LinkButton>               
+                </li>--%>
+                <li><asp:LinkButton ID="lnkEnquiries" runat="server" Text="All Enquiries" OnClick="lnkEnquiries_Click" ></asp:LinkButton>               
+                </li> 
+               
+                 
+                <%--<li><asp:LinkButton ID="lnkCreateEnquiry" runat="server" Text="All Enquiries" OnClick="lnkCreateEnquiry_Click" ></asp:LinkButton>               
+                </li> 
+                                        
+                 <li>
+                <asp:LinkButton ID="lnkManageVendor" runat="server" Text="Search Contacts" OnClick="lnkSearchVendor_Click" ></asp:LinkButton>                 
+                </li>
+                <li>
+                <asp:LinkButton ID="lnkManageTermsConditions" runat="server" Text="Terms & Conditions" OnClick="lnkManageTermsConditions_Click" ></asp:LinkButton>                 
+                </li>    --%>
+            </ul>         
+         </li>
+ </asp:Content>
+ 
+ <asp:Content ID="Content3" ContentPlaceHolderID="mainMaster" runat="server">
+ <asp:ContentPlaceHolder ID="main" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>

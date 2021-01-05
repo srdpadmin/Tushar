@@ -1,0 +1,75 @@
+27/02/2016 - Backup is 25th Feb
+----------
+Removed old Quotation and created a brand new Quotation
+Removed old Enquiry and added new Enquiry
+Added new Search Criteria for Quote/Enquiry
+Updated the look of PDF report foe Quote
+
+Current Status
+-------------- 
+DML changes in CoreAssemblies & Database enum table 
+Quotation - CRUD complete with report
+Enquiry   - CRUD including web support without report
+
+Remaining 
+---------
+Purchase Order should be as per Quote now
+Billing & Payroll Search should be working, including Billing Report
+Inventory Receive,Issue,Return and Purchase Order selection in Inventory Stock
+Inventory Search & Reports 
+
+27/01/2016
+----------
+Created ProductMasterTransactions table
+Added Status column in Bill & Stock table
+Product Master balance credit + debit happens through bill,inbound and outbound entries
+Bill credit debit from product is commented, but works when uncommented
+Still using separate logic to in ManageBill & ManageStock pages for new item search through autocomplete
+
+
+
+11/01/2016
+----------
+demo1\test!4231
+demo2\demo!4231
+demo3\demo3 
+
+
+TODO: Should open a popup to enter new item codes 
+TODO: License is working on laptop but not on srdpltd site
+
+07/01/2015
+----------
+Verified from Atul Deo CA 
+PF is always 12% of Basic fixed as well as ESIC regardless of 
+days worked and has to be paid even if no salary given
+
+12/08/2015
+----------
+1) Item Code does not allow invalid item codes - fixed in javascript
+2) Remove Item Code which beomes empty,  
+3) Handles delete logic when item is removed while empty 
+3) Added Breadcrumbs to all pages except Quotation/Enquiry
+4) Added style sheet for buttons & header
+
+
+05/09/2015
+----------
+License redirect from login added working online
+
+
+04/09/2015
+----------
+Mdf file is password protected and password is sustain1259
+
+16/07/2015
+----------
+demo1\demo!4231
+demo2\demo!4231
+demo3\demo3 
+
+1) Configuration page added in payroll
+2) Database updated with configuration table
+3) Added clsConfigurationData to data,clsConfiguration to Buslogic folder in payroll
+4) PayrollMaster & PayrollMaster.cs file udpated
+

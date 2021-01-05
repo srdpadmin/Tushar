@@ -1,0 +1,57 @@
+﻿/* These styles create the dropdown menus. */
+/* http://www.cssnewbie.com/easy-css-dropdown-menus/ */
+#navbar {
+   margin: 0;
+   padding: 0;
+   height: 1em;    
+   }
+   
+#navbar li {
+   list-style: none;
+   float: left;
+  }
+  
+#navbar li a {
+   display: block;
+   padding: 3px 8px;      
+   text-decoration:none;   
+   font-weight:normal;
+   color:#fff;		/* #fff;  #7CFC00;  */
+    /*background-image: url('../../Images/topBar2.png'); */
+  background-color: #1B74E2; /*#0082D4;
+}
+   
+   
+#navbar li:hover a {
+   display: block;
+   padding: 3px 8px;     
+   text-decoration: none;   
+   color:#00E5EE;		/* #fff;    */
+    }
+   
+#navbar li ul {
+   display: none; 
+   width: 10em; /* Width to help Opera out */      
+  }
+    
+#navbar li:hover ul, #navbar li.hover ul {
+   display: block;
+   position: absolute;
+   margin: 0;
+   padding: 0;    
+  }
+   
+#navbar li:hover li, #navbar li.hover li {
+   float: none;   
+   
+  }
+    
+#navbar li:hover li a, #navbar li.hover li a {       
+   color:#fff;       
+  }
+  
+#navbar li li a:hover     
+{
+    color:#4EEE94; /* #7CFC00; */   
+}
+ 

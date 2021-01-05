@@ -1,0 +1,72 @@
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+System.Data.OleDb.OleDbException: The database has been placed in a state by user 'Admin' on machine 'NITIN-PC' that prevents it from being opened or locked.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at CoreAssemblies.DbFactory.GetDataReader(String sql) in C:\WebDevelopment\CoreAssemblies\CoreAssemblies\DbFactory.cs:line 377
+   at AllModules.AccessMembershipProvider.GetUser(String username, Boolean userIsOnline) in C:\WebDevelopment\AllModules\AllModules\App_Data\AccessMembershipProvider.cs:line 1277
+
+System.Data.OleDb.OleDbException: The database has been placed in a state by user 'Admin' on machine 'NITIN-PC' that prevents it from being opened or locked.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at CoreAssemblies.DbFactory.GetDataReader(String sql) in C:\WebDevelopment\CoreAssemblies\CoreAssemblies\DbFactory.cs:line 377
+   at AllModules.AccessMembershipProvider.GetUser(String username, Boolean userIsOnline) in C:\WebDevelopment\AllModules\AllModules\App_Data\AccessMembershipProvider.cs:line 1277
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+
+SalarySlip_writingReportLocally:An error occurred during local report processing.
+

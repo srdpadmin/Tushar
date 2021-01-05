@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PurchaseOrder.Master.cs" Inherits="PurchaseOrder.Site" 
+MasterPageFile="~/Site.Master" %>
+
+ <asp:Content ID="Content1"  ContentPlaceHolderID="headMaster" runat="server">
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>
+ 
+ <asp:Content ID="Content2" ContentPlaceHolderID="MenuBar" runat="server">
+ <li style="width:10%;"><a href="#"> I&nbsp;-&nbsp;Order  </a>
+            <ul>
+                <li><asp:LinkButton ID="lnkCreateOrder" runat="server" Text="Create New Purchase Order" OnClick="lnkCreateOrder_Click" ></asp:LinkButton>               
+                </li> 
+               <li>
+                <asp:LinkButton ID="lnkSearchOrder" runat="server" Text="Search Orders" OnClick="lnkSearchOrder_Click" ></asp:LinkButton>                 
+                </li>                         
+                 <li>
+                <asp:LinkButton ID="lnkManageVendor" runat="server" Text="Search Contacts" OnClick="lnkSearchVendor_Click" ></asp:LinkButton>                 
+                </li>
+                <li>
+                <asp:LinkButton ID="lnkManageTermsConditions" runat="server" Text="Terms & Conditions" OnClick="lnkManageTermsConditions_Click" ></asp:LinkButton>                 
+                </li>    
+                 <li>
+                <asp:LinkButton ID="lnkProductMaster" runat="server" Text="Product Master" OnClick="lnkProductMaster_Click" ></asp:LinkButton>                 
+                </li> 
+            </ul>         
+         </li>
+ </asp:Content>
+ 
+ <asp:Content ID="Content3" ContentPlaceHolderID="mainMaster" runat="server">
+ <asp:ContentPlaceHolder ID="main" runat="server">
+ </asp:ContentPlaceHolder>
+ </asp:Content>

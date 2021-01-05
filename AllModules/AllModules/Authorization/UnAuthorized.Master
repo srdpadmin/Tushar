@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UnAuthorized.master.cs" Inherits="Authorization.UnAuthorized" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Authentication</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+     <link  href="../App_Themes/Default/metro.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fColor">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

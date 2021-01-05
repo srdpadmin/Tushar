@@ -1,0 +1,191 @@
+﻿/* http://www.c-sharpcorner.com/forums/thread/132191/asp-net-profile-provider-custom-fields.aspx */
+/* http://www.colorzilla.com/gradient-editor/ */
+/*html, body{ height:100%; } could be fix for overflow-y:hidden in Chrome issue*/ 
+#headerBand { height:30px; background-color:Gray; width:100%; margin-top:-5px;}
+#headerBand1{ height:30px;  background-image: url('../../Images/topBar1.png'); } 
+
+/*margin-top:-5px; for above was -15px #headerHeight{ height:20px;  } This is no longer needed */
+#headerBandMargin {height:10px;}
+#footerHeight{ height:50px;   }
+#contentHeight{ height:500px; }
+
+.vAlign
+{     
+    vertical-align:bottom;    
+}
+ .fColor
+{
+     COLOR: #333333;
+     font-family: arial,sans-serif; /* "segoe ui", */
+     font-size:13px;
+     height:28px;  /* this height specified the heigt or margin above/below text */   
+     font-style:normal;
+     font-weight:lighter;  
+     background-color:White;
+}        
+  
+/* GRID */ 
+
+.Grid_Row a
+{
+    text-decoration:none;
+    color:#333333;
+}
+        
+.Grid_Row td
+{
+    border:solid 1px #D0D7E5;
+    margin:5px;
+}
+ .Grid_Row th
+{
+   BACKGROUND:url('../../Images/headerT.png') REPEAT-X TOP LEFT;   
+   height:25px;
+   border: solid 1px #A4ABB2;
+   font-weight:bold;
+   padding-right:5px;
+   padding-left:5px;
+}
+.Grid_Row_Foot td td
+{
+   BACKGROUND:url('../../Images/headerT.png') REPEAT-X TOP LEFT;   
+   height:20px;
+   width:15px;
+   border: solid 1px #A4ABB2;
+   font-weight:bold;  
+   text-align:center;
+}
+
+/* HTML TABLE */
+.TableClass /* class for just table width: 72%;  */
+{
+     COLOR: #333333;                                  
+     border:1px solid #D0D7E5;
+     width:100%;
+     border-collapse:collapse;
+}
+.TableClass tbody
+{
+border-collapse:collapse;
+}
+.TableClass td
+{
+     text-align:center;
+     height:25px;
+     border:1px solid #D0D7E5;
+     border-collapse:collapse; /* IMPORTANT: Collapse means collapse two border into single border" */
+}
+.theadColumn
+{
+    font-weight:bold;    background-color:#ffffe0;   /* To make the header items bold in the table,so thead is required */
+}
+.theadColumnWithBackground
+{
+    font-weight:600;   /* To make the header items bold in the table,so thead is required */
+    BACKGROUND:url('../../Images/headerT.png') REPEAT-X TOP LEFT;  
+    height:25px;
+}
+
+.HiddenClass
+{
+    display:none;
+}
+
+.WizardButtonStyle
+{
+     background-color:White;
+     border:solid 1px #C5BBAF;     
+}
+
+.NoUnderLine
+{
+  text-decoration: none;
+}
+
+.metroTitle
+{
+    font-size:17px;
+    vertical-align:top;
+    }
+
+.metroContent
+{
+    font-size:15px;   
+}
+.modalBackground 
+{
+    background-color:Gray;
+    opacity:0.5;
+}
+.partitionBorder
+{
+border-bottom:1px solid #D0D7E5; 
+width:100%;
+height:20px;
+}
+
+.txtBoxHalf
+{
+   width:50px !Important;
+}
+.TableClassNoBorder td
+{
+     text-align:center;
+     height:12px;     
+     border-collapse:collapse; 
+}
+
+.modalPopup {
+	background-color:#A4A4A4;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+    z-index:70000 !important;
+	filter: alpha(opacity=70);
+	opacity:0.7;
+	-moz-opacity:0.7;
+}
+
+.Separator
+{
+width:100%;
+margin-left:3px; 
+background-color:#7092BE ; /* #47A3DA */
+color:White; 
+font-size:small;
+ font-weight:bold;
+}
+.border-radius 
+{
+    behavior: url(css/pie.htc);
+}
+
+.button{
+    border: 0.15em White solid;  
+    font-family:Arial;	 			 
+	text-decoration: none;
+	color: white;					/* changed text color to white */
+	padding: 0.25em 1em;  				/* increased padding for a larger button */
+	background-color: #329bd8;		/* changed background color to a nice blue */
+	text-transform: uppercase;		/* made the text uppercase */
+	font-weight: bold;				/* gave the text a bold look */
+}
+
+.button:active {
+	background-color: transparent;  /* changed the bg-color to transparent */
+	border: 0.15em #329bd8 solid;	/* set a border to a blue color */
+	color: #329bd8;					/* set a text color to the same color */
+}
+
+.button:hover {
+	background-color: transparent;  
+	border: 0.15em #5e8ca5 solid;	
+	color: #5e8ca5;					/* minor text color change in a deeper blue */
+}
+
+.greenClass{color:Green;}
+.blueClass{color:blue;}
+.redClass{color:red;}
+ 
+ 
